@@ -1,16 +1,19 @@
 <script>
-import Navbar from '../components/navbar.vue'
+import Navbar from '../components/navbar.vue';
+import Middle from '../components/Middle.vue';
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    Middle
   }
 }
 </script>
 
 <template>
-    <div>
+    <div class="main">
       <Navbar />
+      <Middle />
     </div>
 </template>
  
@@ -29,5 +32,13 @@ export default {
         width: 100vw;
         height: 100vh;
         scrollbar-width: none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        border: 1px solid green;
     }
 </style>
