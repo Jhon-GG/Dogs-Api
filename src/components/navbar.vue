@@ -26,8 +26,12 @@
                 <select class="first" name="first" id="first">
                     <option value="breeds">BRED FOR</option>
                 </select>
-            </li>
-          </ul>
+            </li>    
+            </ul>
+          <div class="search-box">
+                <img class="searchImg" src="../assets/search.svg" alt="search">
+                <input class="search" type="text" placeholder="Search">
+          </div>
         </nav>
     </div>
 </template>
@@ -46,7 +50,6 @@
     .navbar{
         display: flex;
         align-items: center;
-        border: 1px solid green;
         flex-direction: row;
         width: 90vw;
         height: 10vh;
@@ -63,15 +66,15 @@
     }
 
     .logo img{
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.8rem;
+        height: 2.8rem;
     }
 
     .logoTitle{
         display: flex;
         color: #000;
         font-weight: bold;
-        font-size: 1em; 
+        font-size: 1.1rem; 
         height: auto;
         width: auto;
         font-family: 'Quicksand';
@@ -124,5 +127,47 @@
         font-size: 1rem;
         border: none;
     }
+
+    
+    .search-box{
+        display: flex;
+        align-items: center;
+        width: 18vw;
+        height: 4vh;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        margin-left: 1rem;
+        border: 1px solid #000;
+    }
+    
+    .searchImg{
+        display: flex;
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 0.5rem;
+    }
+
+    .search{
+        display: flex;
+        /* border: 1px solid red; */
+        border: none;
+        width: 8vw;
+        height: 4vh;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        margin-left: 0.2rem;
+    }
+
+    .search::placeholder{
+        color: #000;
+        font-family: 'QUicksand';
+    }
+
+    .search:focus{
+        outline:none;
+    }
 </style>
-  
