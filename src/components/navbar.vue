@@ -1,3 +1,29 @@
+<script>
+import { useRouter, useRoute } from 'vue-router';
+import { ref, watch } from 'vue';
+
+export default {
+  setup() {
+    const router = useRouter();
+    const route = useRoute();
+    const isHomePage = ref(route.path === '/home');
+    
+    watch(() => route.path, (newPath) => {
+      isHomePage.value = newPath === '/home';
+    });
+    
+    const navigateToHome = () => {
+      router.push('/home');
+    };
+    
+    return {
+      navigateToHome,
+      isHomePage
+    };
+  }
+}
+</script>
+
 <template>
     <div class="main-box">
         <nav class="navbar">
@@ -6,7 +32,7 @@
             <h1 class="logoTitle"><span>DOG</span> API</h1>
           </div>
           <ul class="ul">
-            <a class="home" href="#">HOME</a>
+            <a class="home" href="#" @click.prevent="navigateToHome">HOME</a>
             <li class="list">
                 <select class="first" name="first" id="first">
                     <option value="breeds">BREEDS</option>
