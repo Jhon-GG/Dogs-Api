@@ -9,7 +9,11 @@
         </div>
         <div class="titleDt">
             <h1>Golden</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod esse deserunt consequuntur tenetur? Tempora ut, aspernatur magni id repellat voluptates error laborum illum reprehenderit, aperiam consequatur vero dolor maxime odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum quasi recusandae tenetur in. Sint ex expedita ad? Enim iusto aliquam id, ut a non sunt obcaecati? Enim, atque amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eius et itaque earum non illo dolorum accusamus perferendis. Eos ipsa inventore veritatis molestias numquam tempore, vitae sint cupiditate quos distinctio!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
         </div>
     </div>
 </template>
@@ -53,15 +57,16 @@
         justify-content: start;
         align-items: center;
         width: 50vw;
-        height: 65vh;
-        margin-top: 1rem;
+        height: 68vh;
+        margin-top: 0rem;
         font-family: 'Quicksand';
         color: #FD9B10;
-        gap: 5rem;
+        gap: 3rem;
+        margin-bottom: 1rem;
     }
 
     .titleDt h1{
-        font-size: 2.3rem;
+        font-size: 3rem;
     }
     .titleDt p{
 
@@ -69,5 +74,63 @@
         color: #000;
         font-weight: bold;
         text-align: justify;
+    }
+
+    @media (max-width: 768px){
+        .content{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            width: 90vw;
+            height: 86vh;
+            margin-top: 20rem;
+        }
+
+        .contImg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #FD9B10;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: auto;
+            height: auto;
+            padding: 1.5rem;
+        }
+
+        .contImg img{
+            display: flex;
+            width: 72vw;
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        .titleDt{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            width: 70vw;
+            height: auto;
+            margin-top: 1rem;
+            font-family: 'Quicksand';
+            color: #FD9B10;
+            gap: 1rem;
+        }
+
+        .titleDt h1{
+            font-size: 2.7rem;
+            margin-bottom: 2rem;
+        }
+        .titleDt p{
+
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: bold;
+            text-align: justify;
+        }
     }
 </style>
