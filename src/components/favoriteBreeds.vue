@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <div class="title">
+    <div id="breeds-section" class="title">
         <h1>Meet your favorite breeds</h1>
     </div>
     <div class="grid-container">
