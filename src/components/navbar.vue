@@ -126,6 +126,7 @@
         font-family: 'Quicksand';
         font-size: 1rem;
         border: none;
+        background-color: transparent;
     }
 
     
@@ -151,15 +152,15 @@
 
     .search{
         display: flex;
-        /* border: 1px solid red; */
         border: none;
-        width: 8vw;
+        width: 15vw;
         height: 4vh;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 50px;
         margin-left: 0.2rem;
+        background-color: transparent;
     }
 
     .search::placeholder{

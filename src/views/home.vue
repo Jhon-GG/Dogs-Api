@@ -1,11 +1,13 @@
 <script>
 import Navbar from '../components/navbar.vue';
-import Middle from '../components/Middle.vue';
+import Middle from '../components/middle.vue';
+import FavoriteBreeds from '../components/favoriteBreeds.vue';
 
 export default {
   components: {
     Navbar,
-    Middle
+    Middle,
+    FavoriteBreeds
   }
 }
 </script>
@@ -14,25 +16,24 @@ export default {
     <div class="main">
       <Navbar />
       <Middle />
+      <FavoriteBreeds/>
     </div>
 </template>
  
 
 <style>
-    html{
+    * {
         margin: 0;
-        padding:0;
-        background-color: #fff;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    *{
-        margin: 0;
-        padding:0;
+    html, body {
+          width: 100vw;
         background-color: #fff;
-        width: 100vw;
-        height: 100vh;
-        scrollbar-width: none;
+        overflow-x: hidden;
     }
+
 
     .main{
         display: flex;
