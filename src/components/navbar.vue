@@ -51,9 +51,12 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+        background-color: white;
         width: 90vw;
         height: 10vh;
         font-family: 'Quicksand';
+        position: fixed;
+        z-index: 2;
     }
 
     .logo{

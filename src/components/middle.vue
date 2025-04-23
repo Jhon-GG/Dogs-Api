@@ -12,7 +12,9 @@
                 <div class="card">
                     <h1>Explore <br> breeds</h1> <br>
                     <p>Explore all kind of breeds, as well as some information about that.</p>
-                    <button>BREEDS</button>
+                    <a href="#breeds-section">
+                        <button>BREEDS</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -30,6 +32,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: .5rem;
     }
 
     .explore{
@@ -77,7 +80,7 @@
 
     .back{
         position: absolute;
-        background-color: orange;
+        background-color: #FD9B10;
         width: 20vw;
         height: 37vh;
         z-index: 0;
@@ -122,8 +125,17 @@
         margin-left: 4.8rem;
         margin-top: 3rem;
         border: none;
-        background-color: orange;
+        background-color: #FD9B10;
         color: #fff;
         font-weight: bold;
+    }
+
+    .card button:hover{
+        cursor: pointer;
+        background-color: #ff9500;
+    }
+
+    .card a{
+        text-decoration: none;
     }
 </style>

@@ -1,27 +1,29 @@
 <script>
 import Navbar from '../components/navbar.vue';
-import Middle from '../components/middle.vue';
-import FavoriteBreeds from '../components/favoriteBreeds.vue';
+import detailsContent from '../components/detailsContent.vue';
 
 export default {
   components: {
     Navbar,
-    Middle,
-    FavoriteBreeds
+    detailsContent
+  },
+  props: {
+    breed: {
+      type: String,
+      default: 'GOLDEN RETRIEVER'
+    }
   }
 }
 </script>
 
 <template>
-    <div class="main">
-      <Navbar />
-      <Middle />
-      <FavoriteBreeds/>
+    <div class="mainDetails">
+        <Navbar/>
+        <detailsContent />
     </div>
 </template>
 
-
-<style>
+<style scoped>
     * {
         margin: 0;
         padding: 0;
@@ -29,18 +31,17 @@ export default {
     }
 
     html, body {
-          width: 100vw;
+        width: 100vw;
         background-color: #fff;
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
 
 
-    .main{
+    .mainDetails{
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        border: 1px solid green;
     }
 </style>
