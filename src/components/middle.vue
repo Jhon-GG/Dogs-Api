@@ -3,19 +3,18 @@
 </script>
 
 <template>
-    <div class="middle">
+     <div class="middle">
         <div class="explore">
-            <h1>Explore about <span>DOGS <br> AND <br> PUPPIES</span></h1>
+            <h1>Explore about <br> <span>DOGS <br> AND <br> PUPPIES</span></h1>
         </div>
         <div class="breeds">
-            <div class="back">
-                <div class="card">
-                    <h1>Explore <br> breeds</h1> <br>
-                    <p>Explore all kind of breeds, as well as some information about that.</p>
-                    <a href="#breeds-section">
-                        <button>BREEDS</button>
-                    </a>
-                </div>
+            <div class="back"></div>
+            <div class="card">
+                <h1>Explore<br>breeds</h1>
+                <p>Explore all kind of breeds, as well as some information about that.</p>
+                <a href="#breeds-section">
+                    <button>BREEDS</button>
+                </a>
             </div>
         </div>
     </div>
@@ -23,239 +22,166 @@
 
 <style scoped>
 
-    .middle{
-        display: flex;
-        flex-direction: column;
-        width: 90vw;
-        height: 86vh;
-        background-image: url('../assets/puppies1.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: .5rem;
-    }
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .explore{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        width: 77rem;
-        height: 18rem;
-        background-color: transparent;
-        margin-top: 2rem;
-    }
+        body {
+            font-family: 'Quicksand';
+            overflow-x: hidden;
+        }
 
-    .explore h1{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        width: auto;
-        height: auto;
-        color: #fff;
-        font-family: 'Quicksand';
-        font-weight: 500;
-        font-size: 1.3rem;
-        background-color: transparent;
-    }
+        .middle {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 86vh;
+            background-image: url("../assets/puppies1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0.5rem auto;
+            position: relative;
+            max-width: 1400px;
+            padding: 2rem;
+            font-family: 'Quicksand';
+        }
 
-    .explore span{
-        display: flex;
-        background-color: transparent;
-        color: #fff;
-        width: auto;
-        height: auto;
-        font-family: 'Quicksand';
-        font-weight: bold;
-        font-size: 2.2rem;
-    }
+        .explore {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto;
+            padding-right: 5%;
+        }
 
-    .breeds{
-        display: flex;
-        background-color: transparent;
-        width: 20vw;
-        height: 35vh;
-        margin-left: 1.4rem;
-    }
+        .explore h1 {
+            color: #fff;
+            font-weight: 500;
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            text-align: right;
+        }
 
-    .back{
-        position: absolute;
-        background-color: #FD9B10;
-        width: 20vw;
-        height: 37vh;
-        z-index: 0;
-    }
+        .explore span {
+            color: #fff;
+            font-weight: bold;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            line-height: 1.2;
+        }
 
-    .card{
-        position: relative;
-        background-color: #fff;
-        width: 20vw;
-        height: 35vh;
-        margin-left: 1.5rem;
-        bottom: 1.5rem;
-        z-index: 1;
-        font-family: 'Quicksand';
-        padding-top: 1rem;
-    }
+        .breeds {
+            position: relative;
+            width: min(90%, 350px);
+            margin-top: auto;
+            margin-bottom: 5%;
+            margin-left: 5%;
+            height: min(40%, 250px);
+        }
 
-    .card h1{
-        display: flex;
-        background-color: transparent;
-        width: auto;
-        height: auto;
-        margin-left: 6.5rem;
-        font-size: 1.6rem;
-    }
+        .back {
+            position: absolute;
+            background-color: #FD9B10;
+            width: 100%;
+            height: 100%;
+            top: 1rem;
+            left: 1rem;
+            z-index: 0;
+        }
 
-    .card p{
-        display: flex;
-        background-color: transparent;
-        width: 16rem;
-        height: auto;
-        font-size: 1rem;
-        margin-left: 1.5rem;
-    }
+        .card {
+            position: relative;
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
 
-    .card button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 9rem;
-        height: 2.5rem;
-        margin-left: 4.8rem;
-        margin-top: 3rem;
-        border: none;
-        background-color: #FD9B10;
-        color: #fff;
-        font-weight: bold;
-    }
+        .card h1 {
+            font-size: clamp(1.2rem, 4vw, 1.6rem);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
 
-    .card button:hover{
-        cursor: pointer;
-        background-color: #ff9500;
-    }
+        .card p {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            margin-bottom: auto;
+        }
 
-    .card a{
-        text-decoration: none;
-    }
+        .card a {
+            text-decoration: none;
+            margin-top: auto;
+            align-self: center;
+        }
 
-    @media (max-width: 768px){
-        .middle{
-        display: flex;
-        flex-direction: column;
-        width: 90vw;
-        height: 88vh;
-        background-image: url('../assets/puppies1.jpg');
-        background-position: -15rem center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: .5rem;
-    }
+        .card button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: clamp(120px, 50%, 150px);
+            padding: 0.75rem 1rem;
+            border: none;
+            background-color: #FD9B10;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-    .explore{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        width: 22rem;
-        height: 18rem;
-        background-color: transparent;
-        margin-top: 2rem;
-    }
+        .card button:hover {
+            background-color: #ff9500;
+        }
 
-    .explore h1{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        width: auto;
-        height: auto;
-        color: #fff;
-        font-family: 'Quicksand';
-        font-weight: 500;
-        font-size: 1.3rem;
-        background-color: transparent;
-    }
+        @media (max-width: 768px) {
+            .middle {
+                width: 90vw;
+                padding: 1rem;
+                height: 85vh;
+            }
 
-    .explore span{
-        display: flex;
-        background-color: transparent;
-        color: #fff;
-        width: auto;
-        height: auto;
-        font-family: 'Quicksand';
-        font-weight: bold;
-        font-size: 2.2rem;
-    }
+            .explore {
+                display: flex;
+                padding-right: 2%;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
 
-    .breeds{
-        display: flex;
-        background-color: transparent;
-        width: 20vw;
-        height: 25vh;
-        margin-left: 1.4rem;
-        margin-top: 15rem;
-    }
+            .breeds {
+                width: 90%;
+                max-width: none;
+                margin-top: auto;
+                margin-bottom: 10%;
+            }
+        }
 
-    .back{
-        position: absolute;
-        background-color: #FD9B10;
-        width: 60vw;
-        height: 25vh;
-        z-index: 0;
-    }
+        @media (max-width: 480px) {
+            .middle {
+                width: 90vw;
+                background-position: 30% center;
+            }
+            .explore {
 
-    .card{
-        position: relative;
-        background-color: #fff;
-        width: 60vw;
-        height: 25vh;
-        margin-left: 1.5rem;
-        bottom: 1.5rem;
-        z-index: 1;
-        font-family: 'Quicksand';
-        padding-top: 1rem;
-    }
+                align-items: flex-start;
+                padding-left: 2%;
+                padding-right: 0;
+            }
 
-    .card h1{
-        display: flex;
-        background-color: transparent;
-        width: auto;
-        height: auto;
-        margin-left: 5.5rem;
-        font-size: 1.4rem;
-    }
+            .explore h1 {
+                text-align: left;
+            }
+            .breeds {
 
-    .card p{
-        display: flex;
-        background-color: transparent;
-        width: 14rem;
-        height: auto;
-        font-size: 1rem;
-        margin-left: 1.5rem;
-    }
-
-    .card button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 9rem;
-        height: 2.5rem;
-        margin-left: 3.8rem;
-        margin-top: 1.2rem;
-        border: none;
-        background-color: #FD9B10;
-        color: #fff;
-        font-weight: bold;
-    }
-
-    .card button:hover{
-        cursor: pointer;
-        background-color: #ff9500;
-    }
-
-    .card a{
-        text-decoration: none;
-    }
-    }
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                height: max(30%, 180px);
+            }
+        }
 
 </style>
