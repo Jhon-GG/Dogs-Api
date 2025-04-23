@@ -36,7 +36,7 @@
         .middle {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 90vw;
             height: 86vh;
             background-image: url("../assets/puppies1.jpg");
             background-position: center;
@@ -138,7 +138,7 @@
             background-color: #ff9500;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 800px) {
             .middle {
                 width: 90vw;
                 padding: 1rem;
