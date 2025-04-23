@@ -41,9 +41,10 @@ const fetchBreeds = async () => {
   }
 }
 
-const goToDetails = (breedName) => {
+const goToDetails = (breedName, breedId) => {
   router.push({
-    path: `/details/${encodeURIComponent(breedName)}`
+    path: `/details/${encodeURIComponent(breedName)}`,
+    query: { id: breedId }
   })
 }
 
@@ -86,7 +87,7 @@ onMounted(() => {
       <img :src="breed.image?.url || 'https://placedog.net/300/200?id=1'" :alt="breed.name">
       <p>
         {{ breed.name }}<br>
-        <span><button @click="goToDetails(breed.name)">MORE</button></span>
+        <span><button @click="goToDetails(breed.name, breed.id)">MORE</button></span>
       </p>
     </div>
   </div>
