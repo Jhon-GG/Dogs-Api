@@ -217,7 +217,7 @@
             display: flex;
             color: #000;
             font-weight: bold;
-            font-size: 1rem; 
+            font-size: .8rem; 
             height: auto;
             width: auto;
             font-family: 'Quicksand';
@@ -237,7 +237,7 @@
         list-style:none;
         width: 40vw;
         height: 10vh;
-        gap: 1.3rem;
+        gap: .8rem;
         margin-left: 5rem;  
         overflow-x: auto;
         scrollbar-width: none;
@@ -248,7 +248,7 @@
             justify-content: center;
             align-items: center;
             color: #000;
-            font-size: 1rem;
+            font-size: .8rem;
             width: auto;
             height: auto;  
             text-decoration: none;
@@ -269,7 +269,7 @@
             color: #000;
             font-weight: bold;
             font-family: 'Quicksand';
-            font-size: 1rem;
+            font-size: .8rem;
             border: none;
             background-color: transparent;
         }
