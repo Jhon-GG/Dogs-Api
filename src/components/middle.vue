@@ -138,4 +138,124 @@
     .card a{
         text-decoration: none;
     }
+
+    @media (max-width: 768px){
+        .middle{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 88vh;
+        background-image: url('../assets/puppies1.jpg');
+        background-position: -15rem center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: .5rem;
+    }
+
+    .explore{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 22rem;
+        height: 18rem;
+        background-color: transparent;
+        margin-top: 2rem;
+    }
+
+    .explore h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        font-size: 1.3rem;
+        background-color: transparent;
+    }
+
+    .explore span{
+        display: flex;
+        background-color: transparent;
+        color: #fff;
+        width: auto;
+        height: auto;
+        font-family: 'Quicksand';
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+
+    .breeds{
+        display: flex;
+        background-color: transparent;
+        width: 20vw;
+        height: 25vh;
+        margin-left: 1.4rem;
+        margin-top: 15rem;
+    }
+
+    .back{
+        position: absolute;
+        background-color: #FD9B10;
+        width: 60vw;
+        height: 25vh;
+        z-index: 0;
+    }
+
+    .card{
+        position: relative;
+        background-color: #fff;
+        width: 60vw;
+        height: 25vh;
+        margin-left: 1.5rem;
+        bottom: 1.5rem;
+        z-index: 1;
+        font-family: 'Quicksand';
+        padding-top: 1rem;
+    }
+
+    .card h1{
+        display: flex;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        margin-left: 5.5rem;
+        font-size: 1.4rem;
+    }
+
+    .card p{
+        display: flex;
+        background-color: transparent;
+        width: 14rem;
+        height: auto;
+        font-size: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    .card button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 9rem;
+        height: 2.5rem;
+        margin-left: 3.8rem;
+        margin-top: 1.2rem;
+        border: none;
+        background-color: #FD9B10;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .card button:hover{
+        cursor: pointer;
+        background-color: #ff9500;
+    }
+
+    .card a{
+        text-decoration: none;
+    }
+    }
+
 </style>
