@@ -1,4 +1,4 @@
-# Prueba Frontend - Aplicación de Razas de Perros
+# Dogs Api - Aplicación de Razas de Perros
 
 Este proyecto es una aplicación web desarrollada con Vue.js que permite consultar información sobre diferentes razas de perros y sus propósitos de crianza utilizando The Dog API.
 
